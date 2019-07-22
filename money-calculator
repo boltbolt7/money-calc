@@ -1,0 +1,30 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+var theTotal = 0;
+$('button').click(function(){
+   theTotal = Number(theTotal) + Number($(this).val());
+    $('.total').text("Total: "+theTotal);        
+});
+
+$('.total').text("Total: "+theTotal);   
+    </script>
+</head>
+
+<body>
+
+<button value="100"><img src="https://moneycalc.files.wordpress.com/2019/07/1_cent_coin_eu_serie_1-1.png" onclick="displayData(11,1,0,'A')" onmouseover="" style="cursor: pointer; width: 50px;"></button>
+<button value="200">200</button>
+<button value="300">300</button>
+<div class="total"></div>
+<input type="button" value="Refresh Page" onClick="location.href=location.href">
+
+
+</body>
+
+
+
+</html>
